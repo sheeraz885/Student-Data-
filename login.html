@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <form class="form" onsubmit="checkForm(event)">
+            <div class="pannel">
+                <h1>Student Data</h1>
+
+                <!-- input for Name -->
+                <input type="text" name="fullname" placeholder="Enter your Name " id="input1" oninput="check(event,'name')">
+                <span id="error1"></span>
+
+                <!-- input for Student ID -->
+                <input type="text" placeholder="Enter your Student ID" id="input2" oninput="check(event,'id')">
+                <span id="error2"></span>
+
+                <!-- input for Student Gmail -->
+                <input type="email" placeholder="Enter your email " class="new" oninput="check(event,'gmail')">
+                <span id="error3"></span>
+
+                <input type="submit" value="Search" id="submit" />
+            </div>
+        </form>
+    </div>
+    <div class="displayResult"></div>
+    <script src="app.js"></script>
+</body>
+</html>
